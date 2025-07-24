@@ -1,0 +1,235 @@
+html{
+    scroll-behavior:smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1000px;
+    margin: auto;
+    /* font-family: "Handlee", serif;
+    font-family: "Montserrat", serif;
+    font-family: "Roboto", serif;*/
+} 
+.row{
+    width: 100%;
+
+}
+.row::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.logo-div img{
+    border-radius: 100%;
+    width: 80px;
+}
+
+[class*="col-"]{
+    float: left;
+    padding: 15px;
+}
+
+
+[class*="col-"]{
+    width: 100%;
+}
+/* header degine  start */
+header{
+    background-color:#24a19c;
+    padding: 0 1%;
+    text-align: center;
+}
+nav ol li{
+    display: block;
+}
+nav ol li a{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 20px;
+    font-size: 1.2rem;
+    transition: .4s;
+}
+nav ol li a:hover{
+    border-radius:20px;
+   background-color: black;
+}
+/* header degine end */
+
+
+/* banner deginr Start here */
+#banner-seciton{
+    background-image: url("restaurent.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+}
+.banner-body{
+    padding: 100px 20px;
+    text-align: center;
+}
+.banner-body h2{
+    width: 100%;
+    margin: 0 auto;
+    font-size: 2rem;
+    background-color: yellow;
+    border-radius: 30px;
+    font-family: "Handlee", serif;
+    padding: 10px;
+
+}
+.banner-body p{
+    width: 100%;
+    margin: 15px auto;
+    font-size: 2rem;
+    color: white;
+    background-color: green;
+    padding: 10px;
+}
+.bnt{
+    width:140px;
+    height: 70px;
+    border-radius: 10px;
+    /* font-size: 1.2rem; */
+    background-color:green;
+    text-transform: uppercase;
+    transform: .4s;
+}
+.bnt:hover{
+    transform: scale(1.5);
+}
+/* banner deginr Start here */
+/* aboute me degine start here */
+#aboute-us{
+    padding: 20px;
+}
+.aboute-body h3{
+    padding: 20px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+
+}
+.aboute-body p{
+    padding: 20px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+
+}
+
+/* aboute me degine End here */
+
+/* Food menu Satrt Here */
+
+.menu{
+    padding: 1%;
+}
+.card-body{
+    text-align: center;
+}
+.card-body img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.card-docs{
+    background-color: rgb(165,164,164);
+}
+.head{
+    background-color: green;
+    color: white;
+    padding: 5%;
+}
+.card-docs > p{
+    font-size: 1.2rem;
+    padding: 5px;
+    font-weight: bold;
+}
+.card{
+    transition: 0.4s;
+}
+.card:hover{
+    transform: scale(1.1);
+
+}
+/* Food menu End Here */
+
+/* contact degine start here */
+
+
+#contact{
+    padding: 1%;
+    background-color: #595b85;
+}
+.contact-details{
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+.maps{
+    width: 100%;
+}
+
+
+/* contact degine end here */
+
+/* small screen devices */
+
+@media  screen(min-width: 576px) {
+    /* For desktop: */
+    .col-sm-1 {width: 8.33%;}
+    .col-sm-2 {width: 16.66%;}
+    .col-sm-3 {width: 25%;}
+    .col-sm-4 {width: 33.33%;}
+    .col-sm-5 {width: 41.66%;}
+    .col-sm-6 {width: 50%;}
+    .col-sm-7 {width: 58.33%;}
+    .col-sm-8 {width: 66.66%;}
+    .col-sm-9 {width: 75%;}
+    .col-sm-10 {width: 83.33%;}
+    .col-sm11 {width: 91.66%;}
+    .col-sm-12 {width: 100%;}
+  }
+
+ 
+/* mediam screen devices */
+
+@media  screen(min-width: 778px) {
+    /* For desktop: */
+    .col-md-1 {width: 8.33%;}
+    .col-md-2 {width: 16.66%;}
+    .col-md-3 {width: 25%;}
+    .col-md-4 {width: 33.33%;}
+    .col-md-5 {width: 41.66%;}
+    .col-md-6 {width: 50%;}
+    .col-md-7 {width: 58.33%;}
+    .col-md-8 {width: 66.66%;}
+    .col-md-9 {width: 75%;}
+    .col-md-10 {width: 83.33%;}
+    .col-md-11 {width: 91.66%;}
+    .col-md-12 {width: 100%;}
+  }
+
+  /* larger screen devuces */
+@media  screen(min-width: 992px) {
+    /* For desktop: */
+    .col-lg-1 {width: 8.33%;}
+    .col-lg-2 {width: 16.66%;}
+    .col-lg-3 {width: 25%;}
+    .col-lg-4 {width: 33.33%;}
+    .col-lg-5 {width: 41.66%;}
+    .col-lg-6 {width: 50%;}
+    .col-lg-7 {width: 58.33%;}
+    .col-lg-8 {width: 66.66%;}
+    .col-lg-9 {width: 75%;}
+    .col-lg-10 {width: 83.33%;}
+    .col-lg11 {width: 91.66%;}
+    .col-lg-12 {width: 100%;}
+  }
